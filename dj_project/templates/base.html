@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% block title %}Data Studio{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #000000;
+        }
+
+        .navbar {
+            background-color: #000000;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            box-sizing: border-box;
+            float: right;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ffffff;
+            color: black;
+        }
+
+
+        .button {
+            margin-top: 50px;
+            margin-left: 50px;
+            width: 300px;
+            height: 30px;
+            display: inline-block;
+            padding: 10px 20px;
+            color: #000000;
+            background-color: #fffafa;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 20px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+                .button1 {
+            margin-top: 50px;
+            margin-left: 50px;
+            width: 300px;
+            height: 30px;
+            display: inline-block;
+            padding: 10px 20px;
+            color: #000000;
+            background-color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 20px;
+            align-items: center;
+            text-align: center;
+            letter-spacing: -0.02em;
+            transition: background-color 0.3s;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+        <img src='https://s3-alpha-sig.figma.com/img/1f9f/0039/ef54252d9a3de224f9d5a56fb4dc3e55?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AQ1~eXcLnfXzJH7yLo7F5sbXRZrs7Oicp4dySyZvdsG4YdsPomjNq0iiU1aZ5wuCIKiXcTD5AwMRuNAcmuMM3aEg4d4CvTkGGugm37FwnBiDB8pU9jbsAkwAXvVGu3R-8FiL3PehHNJg25Tz1w5fld0CrXXhtKuvdhkO8ZL0inP8Tfkq1R8fzoQizT2ILy5~VeekJ0uejlrAcX4JrBVQw5AEeY1KYci79gOz7xTMVXC7d7XMygzVh-k8YrLA87R-GnGORnmL1fj-y9jwd4SGj8v9SPyJ2VDcC2xUGRctUfr50YZONneVKNhZCkP9MBXbQYTy7mWWa6Viv0NzErx~mA__'>
+        <a href="http://127.0.0.1:8000/register">Войти</a>
+        <a href="http://127.0.0.1:8000/">Главная</a>
+        <a href="#do_project">Генерация</a>
+        <a href="#my_projects">Мои проекты</a>
+        <hr size="1" width=99.9% color="B5B5B5">
+    </div>
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>
